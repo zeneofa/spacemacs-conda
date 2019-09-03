@@ -22,9 +22,9 @@ The layer exposes the following key bindings
 
 | Key binding  | Description                                                                                     |
 |--------------+-------------------------------------------------------------------------------------------------|
-| ~SPC a e a ~ | bound to ~conda-env-activate~, which activates a conda environment for your emacs session       |
-| ~SPC a e d ~ | bound to ~conda-deactivate~, deactivates the current conda environment                          |
-| ~SPC a e b ~ | bound to ~conda-env-activate-for-buffer~, activating a conda environment for the current buffer |
+| ~SPC a e a~  | bound to ~conda-env-activate~, which activates a conda environment for your emacs session       |
+| ~SPC a e d~  | bound to ~conda-deactivate~, deactivates the current conda environment                          |
+| ~SPC a e b~  | bound to ~conda-env-activate-for-buffer~, activating a conda environment for the current buffer |
 
 
 ** Additional notes
