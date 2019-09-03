@@ -1,0 +1,33 @@
+#+TITLE:
+Spacemacs layer for the conda elpa package, [[https://github.com/necaris/conda.el]].
+
+** How to install
+
+This is a custom layer, and can be added to the =private/= sub-directory of your =.emacs.d= folder, assuming you are using spacemacs. Therefore you should have a =.emacs.d/private/conda= folder, with the content of this repo inside it.
+
+Add to =dotspacemacs-configuration-layers= section in your =.spacemacs= file, to activate the layer and restart emacs:
+
+#+begin_src emacs-lisp
+dotspacemacs-configuration-layers
+'(
+   ;;  .... 
+   conda
+   ;; ....
+)
+#+end_src
+
+** Key bindings
+
+The layer exposes the following key bindings
+
+| Key binding  | Description                                                                                     |
+---------------+--------------------------------------------------------------------------------------------------
+| ~SPC a e a ~ | bound to ~conda-env-activate~, which activates a conda environment for your emacs session       |
+| ~SPC a e d ~ | bound to ~conda-deactivate~, deactivates the current conda environment                          |
+| ~SPC a e b ~ | bound to ~conda-env-activate-for-buffer~, activating a conda environment for the current buffer |
+
+
+** Additional notes
+
+Two functions in the elpa package have been overwritten to allow the base conda environment to be loaded, these functions are ~conda-env-candidates~, and ~conda-env-name-to-dir~ respectively. An additional step has also been added to resolve the correct path to the anaconda home directory for windows systems. 
+
